@@ -55,7 +55,7 @@
                         <li class="header__nav-item pt-2">
                             <div class="custom-control custom-switch">
                                 <label for="toggleTheme" class="mr-5 text-light">night</label>
-                                <input type="checkbox" class="custom-control-input" id="toggleTheme" checked>
+                                <input type="checkbox" class="custom-control-input" id="toggleTheme">
                                 <label class="custom-control-label text-light" for="toggleTheme">day</label>
                             </div>
                         </li>
@@ -118,7 +118,9 @@
                 </button>
             </div>
         </header>
-        <main class="main" pgfs-layout="page" pgfs-layout-name="404" pgfs-route="/error">
+        <!-- end header -->
+        <!-- main content -->
+        <main class="main" pgfs-layout="page" pgfs-layout-name="forgot" pgfs-route="/forgot">
             <div class="container">
                 <div class="row row--grid">
                     <!-- breadcrumb -->
@@ -127,28 +129,35 @@
                             <li class="breadcrumb__item">
                                 <a href="index.html">Home</a>
                             </li>
-                            <li class="breadcrumb__item breadcrumb__item--active">Error 404</li>
+                            <li class="breadcrumb__item breadcrumb__item--active">Restore password</li>
                         </ul>
                     </div>
                     <!-- end breadcrumb -->
-                    <!-- error -->
+                    <!-- authorization form -->
                     <div class="col-12">
-                        <div class="page-404">
-                            <div class="page-404__wrap">
-                                <div class="page-404__content">
-                                    <h1 class="page-404__title">404</h1>
-                                    <p class="page-404__text">The page you are looking for not available!</p>
-                                    <a href="index.html" class="page-404__btn">go back</a>
-                                </div>
+                        <div class="sign">
+                            <div class="sign__content">
+                                <form action="#" class="sign__form">
+                                    <a href="index.html" class="sign__logo"> <img src="img/logo1.svg" alt=""> </a>
+                                    <div class="sign__group">
+                                        <input type="text" class="sign__input" placeholder="Email">
+                                    </div>
+                                    <div class="sign__group sign__group--checkbox">
+                                        <input id="remember" name="remember" type="checkbox" checked="checked">
+                                        <label for="remember">I agree to the 
+                                            <a href="privacy.html">Privacy Policy</a>
+                                        </label>
+                                    </div>
+                                    <button class="sign__btn" type="button">Send</button>
+                                    <span class="sign__text">We will send a password to your Email</span>
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <!-- end error -->
+                    <!-- end authorization form -->
                 </div>
             </div>
         </main>
-        <!-- end header -->
-        <!-- main content -->
         <!-- end main content -->
         <!-- footer -->
         <footer class="footer" pgfs-layout="component" pgfs-layout-name="mainFooter" data-pgc="mainFooter">

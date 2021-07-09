@@ -11,19 +11,19 @@
         <link rel="stylesheet" href="css/select2.min.css">
         <link rel="stylesheet" href="css/main.css">
         <!-- Favicons -->
-        <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/svg+xml" href="img/logo1.svg" sizes="32x32">
         <link rel="apple-touch-icon" href="icon/favicon-32x32.png">
         <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="Dmitry Volkov">
-        <title>Unitok – NFT Marketplace HTML Template</title>
+        <meta name="keywords" content="ecommerce, marketplace">
+        <meta name="author" content="Myrlly">
+        <title>Myrlly</title>
     </head>
-    <body class="lightTheme">
+    <body class="lightTheme" data-pgc-edit="content[class]" data-pgc-edit-classes="lightTheme">
         <!-- header -->
         <header class="header" pgfs-layout="component" pgfs-layout-name="mainHeader" data-pgc-define="mainHeader" data-pgc-define-name="mainHeader">
             <div class="header__content">
                 <div class="header__logo">
-                    <a href="index.html"> <img src="img/logo.svg" alt=""> </a>
+                    <a href="index.html"> <img src="img/logo1.svg" alt="logo"> </a>
                 </div>
                 <form action="#" class="header__search">
                     <input type="text" placeholder="Search items, collections, and creators">
@@ -41,16 +41,23 @@
                 <div class="header__menu">
                     <ul class="header__nav">
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="#" role="button" id="dropdownMenuHome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home </a>
+                            <a class="header__nav-link" href="./index.html">Home </a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="#" role="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore </a>
+                            <a class="header__nav-link" href="explore.html">Explore </a>
                         </li>
                         <li class="header__nav-item">
                             <a href="activity.html" class="header__nav-link">Activity</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="#" role="button" id="dropdownMenu0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community </a>
+                            <a class="header__nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="header__nav-item pt-2">
+                            <div class="custom-control custom-switch">
+                                <label for="toggleTheme" class="mr-5 text-light">night</label>
+                                <input type="checkbox" class="custom-control-input" id="toggleTheme">
+                                <label class="custom-control-label text-light" for="toggleTheme">day</label>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -63,20 +70,21 @@
                         </button>
                     </div>
                     <div class="header__action header__action--profile">
-                        <a class="header__profile-btn header__profile-btn--verified" href="#" role="button" id="dropdownMenuProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img src="img/avatars/avatar5.jpg" alt=""> <div>
-                                <p>John Doe</p>
-                                <span>784.89 ETH</span>
+                        <a class="header__profile-btn header__profile-btn--verified" href="#" role="button" id="dropdownMenuProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img src="img/avatars/avatar5.jpg" alt="" pgfs-bind="attribute" pgfs-bind-Attr="src" pgfs-bind-model="dpLink"> <div>
+                                <p pgfs-bind="content" pgfs-bind-model="username">John Doe</p>
+                                <span>40,000 NGN</span>
                             </div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path>
+                                <path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z">
+</path>
                             </svg> </a>
                         <ul class="dropdown-menu header__profile-menu" aria-labelledby="dropdownMenuProfile">
                             <li>
-                                <a href="author.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <a href="profile.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path d="M15.71,12.71a6,6,0,1,0-7.42,0,10,10,0,0,0-6.22,8.18,1,1,0,0,0,2,.22,8,8,0,0,1,15.9,0,1,1,0,0,0,1,.89h.11a1,1,0,0,0,.88-1.1A10,10,0,0,0,15.71,12.71ZM12,12a4,4,0,1,1,4-4A4,4,0,0,1,12,12Z"/>
                                     </svg> <span>Profile</span></a>
                             </li>
                             <li>
-                                <a href="author.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <a href="activity.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path d="M3.71,16.29a1,1,0,0,0-.33-.21,1,1,0,0,0-.76,0,1,1,0,0,0-.33.21,1,1,0,0,0-.21.33,1,1,0,0,0,.21,1.09,1.15,1.15,0,0,0,.33.21.94.94,0,0,0,.76,0,1.15,1.15,0,0,0,.33-.21,1,1,0,0,0,.21-1.09A1,1,0,0,0,3.71,16.29ZM7,8H21a1,1,0,0,0,0-2H7A1,1,0,0,0,7,8ZM3.71,11.29a1,1,0,0,0-1.09-.21,1.15,1.15,0,0,0-.33.21,1,1,0,0,0-.21.33.94.94,0,0,0,0,.76,1.15,1.15,0,0,0,.21.33,1.15,1.15,0,0,0,.33.21.94.94,0,0,0,.76,0,1.15,1.15,0,0,0,.33-.21,1.15,1.15,0,0,0,.21-.33.94.94,0,0,0,0-.76A1,1,0,0,0,3.71,11.29ZM21,11H7a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2ZM3.71,6.29a1,1,0,0,0-.33-.21,1,1,0,0,0-1.09.21,1.15,1.15,0,0,0-.21.33.94.94,0,0,0,0,.76,1.15,1.15,0,0,0,.21.33,1.15,1.15,0,0,0,.33.21,1,1,0,0,0,1.09-.21,1.15,1.15,0,0,0,.21-.33.94.94,0,0,0,0-.76A1.15,1.15,0,0,0,3.71,6.29ZM21,16H7a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"/>
                                     </svg> <span>Activity</span></a>
                             </li>
@@ -86,7 +94,7 @@
                                     </svg> <span>Add Asset</span></a>
                             </li>
                             <li>
-                                <a href="author.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <a href="profile.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path d="M19.9,12.66a1,1,0,0,1,0-1.32L21.18,9.9a1,1,0,0,0,.12-1.17l-2-3.46a1,1,0,0,0-1.07-.48l-1.88.38a1,1,0,0,1-1.15-.66l-.61-1.83A1,1,0,0,0,13.64,2h-4a1,1,0,0,0-1,.68L8.08,4.51a1,1,0,0,1-1.15.66L5,4.79A1,1,0,0,0,4,5.27L2,8.73A1,1,0,0,0,2.1,9.9l1.27,1.44a1,1,0,0,1,0,1.32L2.1,14.1A1,1,0,0,0,2,15.27l2,3.46a1,1,0,0,0,1.07.48l1.88-.38a1,1,0,0,1,1.15.66l.61,1.83a1,1,0,0,0,1,.68h4a1,1,0,0,0,.95-.68l.61-1.83a1,1,0,0,1,1.15-.66l1.88.38a1,1,0,0,0,1.07-.48l2-3.46a1,1,0,0,0-.12-1.17ZM18.41,14l.8.9-1.28,2.22-1.18-.24a3,3,0,0,0-3.45,2L12.92,20H10.36L10,18.86a3,3,0,0,0-3.45-2l-1.18.24L4.07,14.89l.8-.9a3,3,0,0,0,0-4l-.8-.9L5.35,6.89l1.18.24a3,3,0,0,0,3.45-2L10.36,4h2.56l.38,1.14a3,3,0,0,0,3.45,2l1.18-.24,1.28,2.22-.8.9A3,3,0,0,0,18.41,14ZM11.64,8a4,4,0,1,0,4,4A4,4,0,0,0,11.64,8Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,11.64,14Z"/>
                                     </svg> <span>Settings</span></a>
                             </li>
@@ -96,6 +104,11 @@
                                     </svg> <span>Sign out</span></a>
                             </li>
                         </ul>
+                    </div>
+                    <div class="header__action header__action--signin">
+                        <a class="header__action-btn header__action-btn--signin" href="signin.html"> <span>Sign in</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M20,12a1,1,0,0,0-1-1H11.41l2.3-2.29a1,1,0,1,0-1.42-1.42l-4,4a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l4,4a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L11.41,13H19A1,1,0,0,0,20,12ZM17,2H7A3,3,0,0,0,4,5V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V16a1,1,0,0,0-2,0v3a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V5A1,1,0,0,1,7,4H17a1,1,0,0,1,1,1V8a1,1,0,0,0,2,0V5A3,3,0,0,0,17,2Z"/>
+                            </svg> </a>
                     </div>
                 </div>
                 <button class="header__btn" type="button">
@@ -107,7 +120,7 @@
         </header>
         <!-- end header -->
         <!-- main content -->
-        <main class="main" pgfs-layout="page" pgfs-layout-name="index" pgfs-route="/" data-pgc-edit="index[pgfs-layout, pgfs-layout-name, pgfs-route]">
+        <main class="main" pgfs-layout="page" pgfs-layout-name="index" pgfs-route="/">
             <!-- home -->
             <div class="home">
                 <div class="container">
@@ -115,7 +128,7 @@
                         <div class="col-12">
                             <div class="home__content">
                                 <h1 class="home__title">The largest marketplace</h1>
-                                <p class="home__text">Digital marketplace for product collectibles. <br>Buy, sell, and discover .</p>
+                                <p class="home__text">Digital marketplace for product collectibles. <br>Buy, sell, and discover . </p>
                                 <div class="home__btns">
                                     <a href="explore.html" class="home__btn home__btn--clr">Explore</a>
                                     <a href="signin.html" class="home__btn">Create</a>
@@ -150,7 +163,7 @@
                                     <div class="card__info">
                                         <div class="card__price">
                                             <span>Current price</span>
-                                            <span>4.89 ETH</span>
+                                            <span>4.89 NGN</span>
                                         </div>
                                         <button class="card__likes" type="button">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -164,7 +177,8 @@
                                     <a href="item.html" class="card__cover"> <img src="img/cover/cover2.jpg" alt=""> <span class="card__time card__time--clock"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                 <path d="M8.46777,8.39453l-.00225.00183-.00214.00208ZM18.42188,8.208a1.237,1.237,0,0,0-.23-.17481.99959.99959,0,0,0-1.39941.41114,5.78155,5.78155,0,0,1-1.398,1.77734,8.6636,8.6636,0,0,0,.1333-1.50977,8.71407,8.71407,0,0,0-4.40039-7.582,1.00009,1.00009,0,0,0-1.49121.80567A7.017,7.017,0,0,1,7.165,6.87793l-.23047.1875a8.51269,8.51269,0,0,0-1.9873,1.8623A8.98348,8.98348,0,0,0,8.60254,22.83594.99942.99942,0,0,0,9.98,21.91016a1.04987,1.04987,0,0,0-.0498-.3125,6.977,6.977,0,0,1-.18995-2.58106,9.004,9.004,0,0,0,4.3125,4.0166.997.997,0,0,0,.71534.03809A8.99474,8.99474,0,0,0,18.42188,8.208ZM14.51709,21.03906a6.964,6.964,0,0,1-3.57666-4.40234,8.90781,8.90781,0,0,1-.17969-.96387,1.00025,1.00025,0,0,0-.79931-.84473A.982.982,0,0,0,9.77,14.80957a.99955.99955,0,0,0-.8667.501,8.9586,8.9586,0,0,0-1.20557,4.71777,6.98547,6.98547,0,0,1-1.17529-9.86816,6.55463,6.55463,0,0,1,1.562-1.458.74507.74507,0,0,0,.07422-.05469s.29669-.24548.30683-.2511a8.96766,8.96766,0,0,0,2.89874-4.63269,6.73625,6.73625,0,0,1,1.38623,8.08789,1.00024,1.00024,0,0,0,1.18359,1.418,7.85568,7.85568,0,0,0,3.86231-2.6875,7.00072,7.00072,0,0,1-3.2793,10.457Z"/>
                                             </svg> <span class="card__clock card__clock--1"></span> </span> </a>
-                                    <h3 class="card__title"><a href="item.html">Les Immortels, the Treachery of Artificial Shadows</a></h3>
+                                    <h3 class="card__title"><a href="item.html">Les Immortels, the Treachery of Artificial
+                                        Shadows</a></h3>
                                     <div class="card__author card__author--verified">
                                         <img src="img/avatars/avatar3.jpg" alt="">
                                         <a href="author.html">@neo</a>
@@ -172,7 +186,7 @@
                                     <div class="card__info">
                                         <div class="card__price">
                                             <span>Current price</span>
-                                            <span>2.61 ETH</span>
+                                            <span>2.61 NGN</span>
                                         </div>
                                         <button class="card__likes" type="button">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -184,7 +198,8 @@
                                 </div>
                                 <div class="card">
                                     <a href="#modal-asset" class="card__cover open-modal"> <img src="img/cover/cover3.jpg" alt=""> <span class="card__time">an hour left</span> </a>
-                                    <h3 class="card__title"><a href="#modal-asset" class="open-modal">Flowers in Concrete (Modal)</a></h3>
+                                    <h3 class="card__title"><a href="#modal-asset" class="open-modal">Flowers in Concrete
+                                        (Modal)</a></h3>
                                     <div class="card__author card__author--verified">
                                         <img src="img/avatars/avatar15.jpg" alt="">
                                         <a href="author.html">@min1max</a>
@@ -192,7 +207,7 @@
                                     <div class="card__info">
                                         <div class="card__price">
                                             <span>Current price</span>
-                                            <span>3.19 ETH</span>
+                                            <span>3.19 NGN</span>
                                         </div>
                                         <button class="card__likes card__likes--active" type="button">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -214,7 +229,7 @@
                                     <div class="card__info">
                                         <div class="card__price">
                                             <span>Current price</span>
-                                            <span>1.11 ETH</span>
+                                            <span>1.11 NGN</span>
                                         </div>
                                         <button class="card__likes" type="button">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -234,7 +249,7 @@
                                     <div class="card__info">
                                         <div class="card__price">
                                             <span>Current price</span>
-                                            <span>0.99 ETH</span>
+                                            <span>0.99 NGN</span>
                                         </div>
                                         <button class="card__likes" type="button">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -256,7 +271,7 @@
                                     <div class="card__info">
                                         <div class="card__price">
                                             <span>Current price</span>
-                                            <span>1.63 ETH</span>
+                                            <span>1.63 NGN</span>
                                         </div>
                                         <button class="card__likes" type="button">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -268,7 +283,8 @@
                                 </div>
                                 <div class="card">
                                     <a href="#modal-asset" class="card__cover open-modal"> <img src="img/cover/cover7.jpg" alt=""> <span class="card__time">an hour left</span> </a>
-                                    <h3 class="card__title"><a href="#modal-asset" class="open-modal">Tranquility (Modal)</a></h3>
+                                    <h3 class="card__title"><a href="#modal-asset" class="open-modal">Tranquility
+                                        (Modal)</a></h3>
                                     <div class="card__author card__author--verified">
                                         <img src="img/avatars/avatar.jpg" alt="">
                                         <a href="author.html">@aaarthur</a>
@@ -276,7 +292,7 @@
                                     <div class="card__info">
                                         <div class="card__price">
                                             <span>Current price</span>
-                                            <span>2.55 ETH</span>
+                                            <span>2.55 NGN</span>
                                         </div>
                                         <button class="card__likes" type="button">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -322,7 +338,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar.jpg" alt="">
                                     <a href="author.html">@miriuuu</a>
-                                    <span>214.22 ETH</span>
+                                    <span>214.22 NGN</span>
                                 </div>
                             </li>
                             <li>
@@ -330,7 +346,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar2.jpg" alt="">
                                     <a href="author.html">@sc00ty</a>
-                                    <span>205.8 ETH</span>
+                                    <span>205.8 NGN</span>
                                 </div>
                             </li>
                             <li>
@@ -338,7 +354,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar3.jpg" alt="">
                                     <a href="author.html">@redalert</a>
-                                    <span>137.65 ETH</span>
+                                    <span>137.65 NGN</span>
                                 </div>
                             </li>
                             <li>
@@ -346,7 +362,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar4.jpg" alt="">
                                     <a href="author.html">@1one</a>
-                                    <span>129.301 ETH</span>
+                                    <span>129.301 NGN</span>
                                 </div>
                             </li>
                             <li>
@@ -354,7 +370,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar5.jpg" alt="">
                                     <a href="author.html">@kateblank</a>
-                                    <span>112.3 ETH</span>
+                                    <span>112.3 NGN</span>
                                 </div>
                             </li>
                             <li>
@@ -362,7 +378,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar6.jpg" alt="">
                                     <a href="author.html">@johndoe</a>
-                                    <span>108.88 ETH</span>
+                                    <span>108.88 NGN</span>
                                 </div>
                             </li>
                             <li>
@@ -370,7 +386,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar7.jpg" alt="">
                                     <a href="author.html">@nickname</a>
-                                    <span>88.58 ETH</span>
+                                    <span>88.58 NGN</span>
                                 </div>
                             </li>
                             <li>
@@ -378,7 +394,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar8.jpg" alt="">
                                     <a href="author.html">@lllily</a>
-                                    <span>73.207 ETH</span>
+                                    <span>73.207 NGN</span>
                                 </div>
                             </li>
                             <li>
@@ -386,7 +402,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar9.jpg" alt="">
                                     <a href="author.html">@fantraingle</a>
-                                    <span>71.076 ETH</span>
+                                    <span>71.076 NGN</span>
                                 </div>
                             </li>
                             <li>
@@ -394,7 +410,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar10.jpg" alt="">
                                     <a href="author.html">@oxyoxyoxy</a>
-                                    <span>57.041 ETH</span>
+                                    <span>57.041 NGN</span>
                                 </div>
                             </li>
                             <li>
@@ -402,7 +418,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar11.jpg" alt="">
                                     <a href="author.html">@vandam</a>
-                                    <span>50.261 ETH</span>
+                                    <span>50.261 NGN</span>
                                 </div>
                             </li>
                             <li>
@@ -410,7 +426,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar12.jpg" alt="">
                                     <a href="author.html">@dididi</a>
-                                    <span>44.79 ETH</span>
+                                    <span>44.79 NGN</span>
                                 </div>
                             </li>
                             <li>
@@ -418,7 +434,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar13.jpg" alt="">
                                     <a href="author.html">@lyzzy</a>
-                                    <span>43.24 ETH</span>
+                                    <span>43.24 NGN</span>
                                 </div>
                             </li>
                             <li>
@@ -426,7 +442,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar14.jpg" alt="">
                                     <a href="author.html">@oceanu</a>
-                                    <span>41.221 ETH</span>
+                                    <span>41.221 NGN</span>
                                 </div>
                             </li>
                             <li>
@@ -434,7 +450,7 @@
                                 <div class="sellers-list__author sellers-list__author--verified">
                                     <img src="img/avatars/avatar15.jpg" alt="">
                                     <a href="author.html">@justart</a>
-                                    <span>40.195 ETH</span>
+                                    <span>40.195 NGN</span>
                                 </div>
                             </li>
                         </ul>
@@ -458,7 +474,7 @@
                             <a href="article.html" class="post__img"> <img src="img/posts/1.jpg" alt=""> </a>
                             <div class="post__content">
                                 <a href="#" class="post__category">Charity</a>
-                                <h3 class="post__title"><a href="article.html">Save Thousands Of Lives Through This NFT</a></h3>
+                                <h3 class="post__title"><a href="article.html">Save Thousands Of Lives Through This NFT</a> </h3>
                                 <div class="post__meta">
                                     <span class="post__date"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                             <path d="M12,2A10,10,0,1,0,22,12,10.01114,10.01114,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.00917,8.00917,0,0,1,12,20ZM14.09814,9.63379,13,10.26807V7a1,1,0,0,0-2,0v5a1.00025,1.00025,0,0,0,1.5.86621l2.59814-1.5a1.00016,1.00016,0,1,0-1-1.73242Z"/>
@@ -477,7 +493,8 @@
                             <a href="article.html" class="post__img"> <img src="img/posts/2.jpg" alt=""> </a>
                             <div class="post__content">
                                 <a href="#" class="post__category">Digital Art</a>
-                                <h3 class="post__title"><a href="article.html">A Month of Rare Digital Art from MakersPlace</a></h3>
+                                <h3 class="post__title"><a href="article.html">A Month of Rare Digital Art from
+                                    MakersPlace</a></h3>
                                 <div class="post__meta">
                                     <span class="post__date"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                             <path d="M12,2A10,10,0,1,0,22,12,10.01114,10.01114,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.00917,8.00917,0,0,1,12,20ZM14.09814,9.63379,13,10.26807V7a1,1,0,0,0-2,0v5a1.00025,1.00025,0,0,0,1.5.86621l2.59814-1.5a1.00016,1.00016,0,1,0-1-1.73242Z"/>
@@ -496,7 +513,8 @@
                             <a href="article.html" class="post__img"> <img src="img/posts/3.jpg" alt=""> </a>
                             <div class="post__content">
                                 <a href="#" class="post__category">Digital Art</a>
-                                <h3 class="post__title"><a href="article.html">The beginners guide to creating & selling digital art NFTs</a></h3>
+                                <h3 class="post__title"><a href="article.html">The beginners guide to creating & selling
+                                    digital art NFTs</a></h3>
                                 <div class="post__meta">
                                     <span class="post__date"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                             <path d="M12,2A10,10,0,1,0,22,12,10.01114,10.01114,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.00917,8.00917,0,0,1,12,20ZM14.09814,9.63379,13,10.26807V7a1,1,0,0,0-2,0v5a1.00025,1.00025,0,0,0,1.5.86621l2.59814-1.5a1.00016,1.00016,0,1,0-1-1.73242Z"/>
@@ -529,12 +547,12 @@
                                     <h3 class="card__title"><a href="item.html">Walking on Air</a></h3>
                                     <div class="card__author">
                                         <img src="img/avatars/avatar13.jpg" alt="">
-                                        <a href="author.html">@nickname</a>
+                                        <a href="collection.html">@nickname</a>
                                     </div>
                                     <div class="card__info">
                                         <div class="card__price">
                                             <span>Reserve price</span>
-                                            <span>4.89 ETH</span>
+                                            <span>4.89 NGN</span>
                                         </div>
                                         <button class="card__likes" type="button">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -546,15 +564,16 @@
                                 </div>
                                 <div class="card">
                                     <a href="item.html" class="card__cover"> <img src="img/cover/cover2.jpg" alt=""> </a>
-                                    <h3 class="card__title"><a href="item.html">Les Immortels, the Treachery of Artificial Shadows</a></h3>
+                                    <h3 class="card__title"><a href="item.html">Les Immortels, the Treachery of Artificial
+                                        Shadows</a></h3>
                                     <div class="card__author card__author--verified">
                                         <img src="img/avatars/avatar10.jpg" alt="">
-                                        <a href="author.html">@neo</a>
+                                        <a href="collection.html">@neo</a>
                                     </div>
                                     <div class="card__info">
                                         <div class="card__price">
                                             <span>Reserve price</span>
-                                            <span>2.61 ETH</span>
+                                            <span>2.61 NGN</span>
                                         </div>
                                         <button class="card__likes" type="button">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -566,15 +585,16 @@
                                 </div>
                                 <div class="card">
                                     <a href="#modal-asset" class="card__cover open-modal"> <img src="img/cover/cover3.jpg" alt=""> </a>
-                                    <h3 class="card__title"><a href="#modal-asset" class="open-modal">Flowers in Concrete (Modal)</a></h3>
+                                    <h3 class="card__title"><a href="#modal-asset" class="open-modal">Flowers in Concrete
+                                        (Modal)</a></h3>
                                     <div class="card__author">
                                         <img src="img/avatars/avatar.jpg" alt="">
-                                        <a href="author.html">@min1max</a>
+                                        <a href="collection.html">@min1max</a>
                                     </div>
                                     <div class="card__info">
                                         <div class="card__price">
                                             <span>Reserve price</span>
-                                            <span>3.19 ETH</span>
+                                            <span>3.19 NGN</span>
                                         </div>
                                         <button class="card__likes card__likes--active" type="button">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -589,12 +609,12 @@
                                     <h3 class="card__title"><a href="item.html">Industrial Revolution</a></h3>
                                     <div class="card__author card__author--verified">
                                         <img src="img/avatars/avatar8.jpg" alt="">
-                                        <a href="author.html">@midinh</a>
+                                        <a href="collection.html">@midinh</a>
                                     </div>
                                     <div class="card__info">
                                         <div class="card__price">
                                             <span>Reserve price</span>
-                                            <span>1.11 ETH</span>
+                                            <span>1.11 NGN</span>
                                         </div>
                                         <button class="card__likes" type="button">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -609,12 +629,12 @@
                                     <h3 class="card__title"><a href="item.html">I Love You</a></h3>
                                     <div class="card__author card__author--verified">
                                         <img src="img/avatars/avatar9.jpg" alt="">
-                                        <a href="author.html">@nicky87</a>
+                                        <a href="collection.html">@nicky87</a>
                                     </div>
                                     <div class="card__info">
                                         <div class="card__price">
                                             <span>Reserve price</span>
-                                            <span>0.99 ETH</span>
+                                            <span>0.99 NGN</span>
                                         </div>
                                         <button class="card__likes" type="button">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -631,12 +651,12 @@
                                     <h3 class="card__title"><a href="item.html">Walking on Air</a></h3>
                                     <div class="card__author">
                                         <img src="img/avatars/avatar14.jpg" alt="">
-                                        <a href="author.html">@redalert</a>
+                                        <a href="collection.html">@redalert</a>
                                     </div>
                                     <div class="card__info">
                                         <div class="card__price">
                                             <span>Reserve price</span>
-                                            <span>1.63 ETH</span>
+                                            <span>1.63 NGN</span>
                                         </div>
                                         <button class="card__likes" type="button">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -648,15 +668,16 @@
                                 </div>
                                 <div class="card">
                                     <a href="#modal-asset" class="card__cover open-modal"> <img src="img/cover/cover7.jpg" alt=""> </a>
-                                    <h3 class="card__title"><a href="#modal-asset" class="open-modal">Tranquility (Modal)</a></h3>
+                                    <h3 class="card__title"><a href="#modal-asset" class="open-modal">Tranquility
+                                        (Modal)</a></h3>
                                     <div class="card__author">
                                         <img src="img/avatars/avatar4.jpg" alt="">
-                                        <a href="author.html">@aaarthur</a>
+                                        <a href="collection.html">@aaarthur</a>
                                     </div>
                                     <div class="card__info">
                                         <div class="card__price">
                                             <span>Reserve price</span>
-                                            <span>2.55 ETH</span>
+                                            <span>2.55 NGN</span>
                                         </div>
                                         <button class="card__likes" type="button">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -779,12 +800,13 @@
                         <div class="main__carousel-wrap">
                             <div class="main__carousel main__carousel--authors owl-carousel" id="authorsc">
                                 <div class="author">
-                                    <a href="author.html" class="author__cover author__cover--bg" data-bg="img/bg/bg-small.png"> </a>
+                                    <a href="collection.html" class="author__cover author__cover--bg" data-bg="img/bg/bg-small.png"> </a>
                                     <div class="author__meta">
-                                        <a href="author.html" class="author__avatar author__avatar--verified"> <img src="img/avatars/avatar.jpg" alt=""> </a>
-                                        <h3 class="author__name"><a href="author.html">Adam Zapel</a></h3>
-                                        <h3 class="author__nickname"><a href="author.html">@aaarthur</a></h3>
-                                        <p class="author__text">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+                                        <a href="collection.html" class="author__avatar author__avatar--verified"> <img src="img/avatars/avatar.jpg" alt=""> </a>
+                                        <h3 class="author__name"><a href="collection.html">Adam Zapel</a></h3>
+                                        <h3 class="author__nickname"><a href="collection.html">@aaarthur</a></h3>
+                                        <p class="author__text">All the Lorem Ipsum generators on the Internet tend to
+                                        repeat predefined chunks as necessary</p>
                                         <div class="author__wrap">
                                             <div class="author__followers">
                                                 <p>3829</p>
@@ -795,11 +817,11 @@
                                     </div>
                                 </div>
                                 <div class="author">
-                                    <a href="author.html" class="author__cover"> </a>
+                                    <a href="collection.html" class="author__cover"> </a>
                                     <div class="author__meta">
-                                        <a href="author.html" class="author__avatar author__avatar--verified"> <img src="img/avatars/avatar2.jpg" alt=""> </a>
-                                        <h3 class="author__name"><a href="author.html">Barb E. Dahl</a></h3>
-                                        <h3 class="author__nickname"><a href="author.html">@nicky87</a></h3>
+                                        <a href="collection.html" class="author__avatar author__avatar--verified"> <img src="img/avatars/avatar2.jpg" alt=""> </a>
+                                        <h3 class="author__name"><a href="collection.html">Barb E. Dahl</a></h3>
+                                        <h3 class="author__nickname"><a href="collection.html">@nicky87</a></h3>
                                         <p class="author__text">If you are going to use a passage of Lorem Ipsum</p>
                                         <div class="author__wrap">
                                             <div class="author__followers">
@@ -811,12 +833,13 @@
                                     </div>
                                 </div>
                                 <div class="author">
-                                    <a href="author.html" class="author__cover author__cover--bg" data-bg="img/bg/bg-small2.png"> </a>
+                                    <a href="collection.html" class="author__cover author__cover--bg" data-bg="img/bg/bg-small2.png"> </a>
                                     <div class="author__meta">
-                                        <a href="author.html" class="author__avatar author__avatar--verified"> <img src="img/avatars/avatar3.jpg" alt=""> </a>
-                                        <h3 class="author__name"><a href="author.html">Biff Wellington</a></h3>
-                                        <h3 class="author__nickname"><a href="author.html">@neo</a></h3>
-                                        <p class="author__text">Many desktop publishing packages and web page editors now use Lorem</p>
+                                        <a href="collection.html" class="author__avatar author__avatar--verified"> <img src="img/avatars/avatar3.jpg" alt=""> </a>
+                                        <h3 class="author__name"><a href="collection.html">Biff Wellington</a></h3>
+                                        <h3 class="author__nickname"><a href="collection.html">@neo</a></h3>
+                                        <p class="author__text">Many desktop publishing packages and web page editors now
+                                        use Lorem</p>
                                         <div class="author__wrap">
                                             <div class="author__followers">
                                                 <p>1294</p>
@@ -827,11 +850,11 @@
                                     </div>
                                 </div>
                                 <div class="author">
-                                    <a href="author.html" class="author__cover author__cover--bg" data-bg="img/bg/bg-small3.png"> </a>
+                                    <a href="collection.html" class="author__cover author__cover--bg" data-bg="img/bg/bg-small3.png"> </a>
                                     <div class="author__meta">
-                                        <a href="author.html" class="author__avatar author__avatar--verified"> <img src="img/avatars/avatar4.jpg" alt=""> </a>
-                                        <h3 class="author__name"><a href="author.html">Charity Case</a></h3>
-                                        <h3 class="author__nickname"><a href="author.html">@midinh</a></h3>
+                                        <a href="collection.html" class="author__avatar author__avatar--verified"> <img src="img/avatars/avatar4.jpg" alt=""> </a>
+                                        <h3 class="author__name"><a href="collection.html">Charity Case</a></h3>
+                                        <h3 class="author__nickname"><a href="collection.html">@midinh</a></h3>
                                         <p class="author__text">There are many variations of passages of Lorem Ipsum</p>
                                         <div class="author__wrap">
                                             <div class="author__followers">
@@ -843,12 +866,13 @@
                                     </div>
                                 </div>
                                 <div class="author">
-                                    <a href="author.html" class="author__cover"></a>
+                                    <a href="collection.html" class="author__cover"></a>
                                     <div class="author__meta">
-                                        <a href="author.html" class="author__avatar author__avatar--verified"> <img src="img/avatars/avatar5.jpg" alt=""> </a>
-                                        <h3 class="author__name"><a href="author.html">Don Key</a></h3>
-                                        <h3 class="author__nickname"><a href="author.html">@kateblank</a></h3>
-                                        <p class="author__text">The generated Lorem Ipsum is therefore always free from repetition</p>
+                                        <a href="collection.html" class="author__avatar author__avatar--verified"> <img src="img/avatars/avatar5.jpg" alt=""> </a>
+                                        <h3 class="author__name"><a href="collection.html">Don Key</a></h3>
+                                        <h3 class="author__nickname"><a href="collection.html">@kateblank</a></h3>
+                                        <p class="author__text">The generated Lorem Ipsum is therefore always free from
+                                        repetition</p>
                                         <div class="author__wrap">
                                             <div class="author__followers">
                                                 <p>9713</p>
@@ -859,12 +883,13 @@
                                     </div>
                                 </div>
                                 <div class="author">
-                                    <a href="author.html" class="author__cover author__cover--bg" data-bg="img/bg/bg-small4.png"> </a>
+                                    <a href="collection.html" class="author__cover author__cover--bg" data-bg="img/bg/bg-small4.png"> </a>
                                     <div class="author__meta">
-                                        <a href="author.html" class="author__avatar author__avatar--verified"> <img src="img/avatars/avatar6.jpg" alt=""> </a>
-                                        <h3 class="author__name"><a href="author.html">Mona Lott</a></h3>
-                                        <h3 class="author__nickname"><a href="author.html">@fantraingle</a></h3>
-                                        <p class="author__text">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+                                        <a href="collection.html" class="author__avatar author__avatar--verified"> <img src="img/avatars/avatar6.jpg" alt=""> </a>
+                                        <h3 class="author__name"><a href="collection.html">Mona Lott</a></h3>
+                                        <h3 class="author__nickname"><a href="collection.html">@fantraingle</a></h3>
+                                        <p class="author__text">All the Lorem Ipsum generators on the Internet tend to
+                                        repeat predefined chunks as necessary</p>
                                         <div class="author__wrap">
                                             <div class="author__followers">
                                                 <p>5 924</p>
@@ -875,12 +900,13 @@
                                     </div>
                                 </div>
                                 <div class="author">
-                                    <a href="author.html" class="author__cover author__cover--bg" data-bg="img/bg/bg-small5.png"> </a>
+                                    <a href="collection.html" class="author__cover author__cover--bg" data-bg="img/bg/bg-small5.png"> </a>
                                     <div class="author__meta">
-                                        <a href="author.html" class="author__avatar"> <img src="img/avatars/avatar7.jpg" alt=""> </a>
-                                        <h3 class="author__name"><a href="author.html">Orson Carte</a></h3>
-                                        <h3 class="author__nickname"><a href="author.html">@sc00ty</a></h3>
-                                        <p class="author__text">It is a long established fact that a reader will be distracted</p>
+                                        <a href="collection.html" class="author__avatar"> <img src="img/avatars/avatar7.jpg" alt=""> </a>
+                                        <h3 class="author__name"><a href="collection.html">Orson Carte</a></h3>
+                                        <h3 class="author__nickname"><a href="collection.html">@sc00ty</a></h3>
+                                        <p class="author__text">It is a long established fact that a reader will be
+                                        distracted</p>
                                         <div class="author__wrap">
                                             <div class="author__followers">
                                                 <p>11 342</p>
@@ -891,11 +917,11 @@
                                     </div>
                                 </div>
                                 <div class="author">
-                                    <a href="author.html" class="author__cover author__cover--bg" data-bg="img/bg/bg-small6.png"> </a>
+                                    <a href="collection.html" class="author__cover author__cover--bg" data-bg="img/bg/bg-small6.png"> </a>
                                     <div class="author__meta">
-                                        <a href="author.html" class="author__avatar author__avatar--verified"> <img src="img/avatars/avatar8.jpg" alt=""> </a>
-                                        <h3 class="author__name"><a href="author.html">Ray Gunn</a></h3>
-                                        <h3 class="author__nickname"><a href="author.html">@justart</a></h3>
+                                        <a href="collection.html" class="author__avatar author__avatar--verified"> <img src="img/avatars/avatar8.jpg" alt=""> </a>
+                                        <h3 class="author__name"><a href="collection.html">Ray Gunn</a></h3>
+                                        <h3 class="author__nickname"><a href="collection.html">@justart</a></h3>
                                         <p class="author__text">All the Lorem Ipsum generators on the Internet</p>
                                         <div class="author__wrap">
                                             <div class="author__followers">
@@ -946,7 +972,8 @@
                                     <path d="M10,13H4a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V14A1,1,0,0,0,10,13ZM9,19H5V15H9ZM20,3H14a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V4A1,1,0,0,0,20,3ZM19,9H15V5h4Zm1,7H18V14a1,1,0,0,0-2,0v2H14a1,1,0,0,0,0,2h2v2a1,1,0,0,0,2,0V18h2a1,1,0,0,0,0-2ZM10,3H4A1,1,0,0,0,3,4v6a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V4A1,1,0,0,0,10,3ZM9,9H5V5H9Z"/>
                                 </svg> </span>
                             <h3 class="feature__title">Post your products</h3>
-                            <p class="feature__text">Click Create and set up key in your product. Add price, a description, profile & banner images.</p>
+                            <p class="feature__text">Click Create and set up key in your product. Add price, a description,
+                            profile & banner images.</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
@@ -955,7 +982,8 @@
                                     <path d="M22.71,6.29a1,1,0,0,0-1.42,0L20,7.59V2a1,1,0,0,0-2,0V7.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l3,3a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l3-3A1,1,0,0,0,22.71,6.29ZM19,13a1,1,0,0,0-1,1v.38L16.52,12.9a2.79,2.79,0,0,0-3.93,0l-.7.7L9.41,11.12a2.85,2.85,0,0,0-3.93,0L4,12.6V7A1,1,0,0,1,5,6h8a1,1,0,0,0,0-2H5A3,3,0,0,0,2,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V14A1,1,0,0,0,19,13ZM5,20a1,1,0,0,1-1-1V15.43l2.9-2.9a.79.79,0,0,1,1.09,0l3.17,3.17,0,0L15.46,20Zm13-1a.89.89,0,0,1-.18.53L13.31,15l.7-.7a.77.77,0,0,1,1.1,0L18,17.21Z"/>
                                 </svg> </span>
                             <h3 class="feature__title">Add your social media</h3>
-                            <p class="feature__text">Upload your product, add a title and description, and customize your store with properties, stats, and unlockable content.</p>
+                            <p class="feature__text">Upload your product, add a title and description, and customize your
+                            store with properties, stats, and unlockable content.</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
@@ -964,7 +992,8 @@
                                     <path d="M15,12a1,1,0,1,0,1-1A1,1,0,0,0,15,12Zm6.71-.71-5-5A1,1,0,0,0,16,6H5A3,3,0,0,0,2,9v6a3,3,0,0,0,3,3H16a1,1,0,0,0,.71-.29l5-5A1,1,0,0,0,21.71,11.29ZM15.59,16H5a1,1,0,0,1-1-1V9A1,1,0,0,1,5,8H15.59l4,4Z"/>
                                 </svg> </span>
                             <h3 class="feature__title">Get known</h3>
-                            <p class="feature__text">After all it set, get a url to share with your clients to see your products.</p>
+                            <p class="feature__text">After all it set, get a url to share with your clients to see your
+                            products.</p>
                         </div>
                     </div>
                 </div>
@@ -978,10 +1007,10 @@
                 <div class="row">
                     <div class="col-12 col-sm-8 col-md-6 col-lg-6 col-xl-4 order-4 order-md-1 order-lg-4 order-xl-1">
                         <div class="footer__logo">
-                            <img src="img/logo.svg" alt="">
-                        </div>                         
-                        <p class="footer__tagline">Digital marketplace for product collectibles. 
-Buy, sell, and discover .</p>
+                            <img src="img/logo1.svg" alt="logo">
+                        </div>
+                        <p class="footer__tagline">Digital marketplace for product collectibles.
+                        Buy, sell, and discover .</p>
                         <div class="footer__lang">
                             <a class="footer__lang-btn" href="#" role="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img src="img/flags/uk.svg" alt=""> <span>English</span> </a>
                             <ul class="dropdown-menu footer__lang-dropdown" aria-labelledby="dropdownLang">
@@ -1019,7 +1048,7 @@ Buy, sell, and discover .</p>
                                     <a href="#">Music</a>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 d-none">
                                 <div class="footer__nav">
                                     <a href="#">Domains</a>
                                     <a href="#">DeFi</a>
@@ -1032,7 +1061,7 @@ Buy, sell, and discover .</p>
                     <div class="col-6 col-md-4 col-lg-3 col-xl-2 order-2 order-lg-3 order-md-4 order-xl-4">
                         <h6 class="footer__title">Community</h6>
                         <div class="footer__nav">
-                            <a href="token.html">Unitok</a>
+                            <a href="token.html">Myrlly</a>
                             <a href="blog.html">Our Blog</a>
                             <a href="faq.html">Help Center</a>
                             <a href="contacts.html">Contacts</a>
@@ -1047,7 +1076,8 @@ Buy, sell, and discover .</p>
                                         <path d="M20.9,2H3.1A1.1,1.1,0,0,0,2,3.1V20.9A1.1,1.1,0,0,0,3.1,22h9.58V14.25h-2.6v-3h2.6V9a3.64,3.64,0,0,1,3.88-4,20.26,20.26,0,0,1,2.33.12v2.7H17.3c-1.26,0-1.5.6-1.5,1.47v1.93h3l-.39,3H15.8V22h5.1A1.1,1.1,0,0,0,22,20.9V3.1A1.1,1.1,0,0,0,20.9,2Z"/>
                                     </svg></a>
                                 <a href="#" target="_blank"><svg viewBox="0 0 18 13" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5507 0.0036464H11.5624L11.5612 0L11.5507 0.0036464ZM11.5108 0.0176323L11.5507 0.0036464H11.5252L11.5108 0.0176323ZM11.5039 0.0243315L11.5108 0.0176323L11.4917 0.0243072L11.5039 0.0243315ZM11.5039 0.0243315L11.2748 0.246719C13.8446 0.975936 15.088 2.11473 15.088 2.11473C13.4318 1.30287 11.9393 0.896938 10.4467 0.732864C9.36818 0.56879 8.28967 0.65508 7.37851 0.732864H7.13058C6.54793 0.732864 5.30826 0.975936 3.64711 1.62616C3.06818 1.87287 2.73595 2.03452 2.73595 2.03452C2.73595 2.03452 3.9781 0.816724 6.71529 0.166505L6.54793 0.00243113C6.54793 0.00243113 4.47521 -0.075352 2.2376 1.54594C2.2376 1.54594 0 5.36704 0 10.0778C0 10.0778 1.23967 12.1925 4.64008 12.2727C4.64008 12.2727 5.13595 11.6249 5.63802 11.0549C3.72893 10.4861 2.98512 9.34857 2.98512 9.34857C2.98512 9.34857 3.15124 9.42878 3.40041 9.59164H3.47479C3.50979 9.59164 3.52722 9.60778 3.54568 9.62487C3.54684 9.62595 3.548 9.62702 3.54917 9.6281V9.63539C3.56901 9.65484 3.58636 9.67185 3.62355 9.67185C3.6596 9.68642 3.69564 9.70096 3.73164 9.71548C4.10416 9.8658 4.47123 10.0139 4.77645 10.158C5.35413 10.4035 6.09669 10.6478 7.00785 10.8094C8.16074 10.9735 9.48223 11.0525 10.9872 10.8094L11.0353 10.7988L11.0353 10.7988C11.7631 10.6384 12.4908 10.4779 13.2186 10.1592C13.3516 10.0923 13.4931 10.0255 13.6419 9.95511C14.0339 9.76978 14.4769 9.56038 14.9504 9.26349C14.9504 9.26349 14.2066 10.4011 12.2169 10.9699C12.626 11.5362 13.2025 12.1852 13.2025 12.1852C15.9898 12.1255 17.3804 10.6948 17.8328 10.2295C17.9325 10.1269 17.9866 10.0713 18 10.0875C18 5.38405 15.75 1.55566 15.75 1.55566C13.7464 0.097178 11.8701 0.0257804 11.5039 0.0243315ZM6.13886 5.36701C7.00663 5.36701 7.70828 6.09623 7.70828 6.98952C7.70828 7.88889 7.00167 8.61811 6.1339 8.61811C5.26613 8.61811 4.55952 7.88889 4.55952 6.99682C4.55952 6.09745 5.26613 5.37066 6.1339 5.37066L6.13886 5.36701ZM11.7707 5.36701C12.6422 5.36701 13.3451 6.09623 13.3451 6.98952C13.3451 7.88889 12.6384 8.61811 11.7707 8.61811C10.9029 8.61811 10.1963 7.88889 10.1963 6.99682C10.1988 6.09745 10.9066 5.37066 11.7707 5.37066V5.36701Z"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5507 0.0036464H11.5624L11.5612 0L11.5507 0.0036464ZM11.5108 0.0176323L11.5507 0.0036464H11.5252L11.5108 0.0176323ZM11.5039 0.0243315L11.5108 0.0176323L11.4917 0.0243072L11.5039 0.0243315ZM11.5039 0.0243315L11.2748 0.246719C13.8446 0.975936 15.088 2.11473 15.088 2.11473C13.4318 1.30287 11.9393 0.896938 10.4467 0.732864C9.36818 0.56879 8.28967 0.65508 7.37851 0.732864H7.13058C6.54793 0.732864 5.30826 0.975936 3.64711 1.62616C3.06818 1.87287 2.73595 2.03452 2.73595 2.03452C2.73595 2.03452 3.9781 0.816724 6.71529 0.166505L6.54793 0.00243113C6.54793 0.00243113 4.47521 -0.075352 2.2376 1.54594C2.2376 1.54594 0 5.36704 0 10.0778C0 10.0778 1.23967 12.1925 4.64008 12.2727C4.64008 12.2727 5.13595 11.6249 5.63802 11.0549C3.72893 10.4861 2.98512 9.34857 2.98512 9.34857C2.98512 9.34857 3.15124 9.42878 3.40041 9.59164H3.47479C3.50979 9.59164 3.52722 9.60778 3.54568 9.62487C3.54684 9.62595 3.548 9.62702 3.54917 9.6281V9.63539C3.56901 9.65484 3.58636 9.67185 3.62355 9.67185C3.6596 9.68642 3.69564 9.70096 3.73164 9.71548C4.10416 9.8658 4.47123 10.0139 4.77645 10.158C5.35413 10.4035 6.09669 10.6478 7.00785 10.8094C8.16074 10.9735 9.48223 11.0525 10.9872 10.8094L11.0353 10.7988L11.0353 10.7988C11.7631 10.6384 12.4908 10.4779 13.2186 10.1592C13.3516 10.0923 13.4931 10.0255 13.6419 9.95511C14.0339 9.76978 14.4769 9.56038 14.9504 9.26349C14.9504 9.26349 14.2066 10.4011 12.2169 10.9699C12.626 11.5362 13.2025 12.1852 13.2025 12.1852C15.9898 12.1255 17.3804 10.6948 17.8328 10.2295C17.9325 10.1269 17.9866 10.0713 18 10.0875C18 5.38405 15.75 1.55566 15.75 1.55566C13.7464 0.097178 11.8701 0.0257804 11.5039 0.0243315ZM6.13886 5.36701C7.00663 5.36701 7.70828 6.09623 7.70828 6.98952C7.70828 7.88889 7.00167 8.61811 6.1339 8.61811C5.26613 8.61811 4.55952 7.88889 4.55952 6.99682C4.55952 6.09745 5.26613 5.37066 6.1339 5.37066L6.13886 5.36701ZM11.7707 5.36701C12.6422 5.36701 13.3451 6.09623 13.3451 6.98952C13.3451 7.88889 12.6384 8.61811 11.7707 8.61811C10.9029 8.61811 10.1963 7.88889 10.1963 6.99682C10.1988 6.09745 10.9066 5.37066 11.7707 5.37066V5.36701Z">
+</path>
                                     </svg></a>
                                 <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path d="M17.34,5.46h0a1.2,1.2,0,1,0,1.2,1.2A1.2,1.2,0,0,0,17.34,5.46Zm4.6,2.42a7.59,7.59,0,0,0-.46-2.43,4.94,4.94,0,0,0-1.16-1.77,4.7,4.7,0,0,0-1.77-1.15,7.3,7.3,0,0,0-2.43-.47C15.06,2,14.72,2,12,2s-3.06,0-4.12.06a7.3,7.3,0,0,0-2.43.47A4.78,4.78,0,0,0,3.68,3.68,4.7,4.7,0,0,0,2.53,5.45a7.3,7.3,0,0,0-.47,2.43C2,8.94,2,9.28,2,12s0,3.06.06,4.12a7.3,7.3,0,0,0,.47,2.43,4.7,4.7,0,0,0,1.15,1.77,4.78,4.78,0,0,0,1.77,1.15,7.3,7.3,0,0,0,2.43.47C8.94,22,9.28,22,12,22s3.06,0,4.12-.06a7.3,7.3,0,0,0,2.43-.47,4.7,4.7,0,0,0,1.77-1.15,4.85,4.85,0,0,0,1.16-1.77,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12S22,8.94,21.94,7.88ZM20.14,16a5.61,5.61,0,0,1-.34,1.86,3.06,3.06,0,0,1-.75,1.15,3.19,3.19,0,0,1-1.15.75,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.73,5.73,0,0,1,6.1,19.8,3.27,3.27,0,0,1,5,19.05a3,3,0,0,1-.74-1.15A5.54,5.54,0,0,1,3.86,16c0-1-.06-1.37-.06-4s0-3,.06-4A5.54,5.54,0,0,1,4.21,6.1,3,3,0,0,1,5,5,3.14,3.14,0,0,1,6.1,4.2,5.73,5.73,0,0,1,8,3.86c1,0,1.37-.06,4-.06s3,0,4,.06a5.61,5.61,0,0,1,1.86.34A3.06,3.06,0,0,1,19.05,5,3.06,3.06,0,0,1,19.8,6.1,5.61,5.61,0,0,1,20.14,8c.05,1,.06,1.37.06,4S20.19,15,20.14,16ZM12,6.87A5.13,5.13,0,1,0,17.14,12,5.12,5.12,0,0,0,12,6.87Zm0,8.46A3.33,3.33,0,1,1,15.33,12,3.33,3.33,0,0,1,12,15.33Z"/>
@@ -1113,7 +1143,8 @@ Buy, sell, and discover .</p>
                     <div class="asset__info">
                         <div class="asset__desc">
                             <h2>Descriptions</h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour.</p>
                         </div>
                         <ul class="asset__authors">
                             <li>
@@ -1148,23 +1179,23 @@ Buy, sell, and discover .</p>
                                 <div class="asset__actions asset__actions--scroll" id="asset__actions--scroll">
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar10.jpg" alt="">
-                                        <p>Bid placed for <b>11.00 ETH</b> 4 hours ago <br>by <a href="author.html">@erikkk</a></p>
+                                        <p>Bid placed for <b>11.00 NGN</b> 4 hours ago <br>by <a href="author.html">@erikkk</a></p>
                                     </div>
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar4.jpg" alt="">
-                                        <p>Bid placed for <b>10.00 ETH</b> 5 hours ago <br>by <a href="author.html">@johndoe</a></p>
+                                        <p>Bid placed for <b>10.00 NGN</b> 5 hours ago <br>by <a href="author.html">@johndoe</a></p>
                                     </div>
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar6.jpg" alt="">
-                                        <p>Bid placed for <b>2.508 ETH</b> 5 hours ago <br>by <a href="author.html">@n1ckname</a></p>
+                                        <p>Bid placed for <b>2.508 NGN</b> 5 hours ago <br>by <a href="author.html">@n1ckname</a></p>
                                     </div>
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar4.jpg" alt="">
-                                        <p>Bid placed for <b>2.2799 ETH</b> 6 hours ago <br>by <a href="author.html">@johndoe</a></p>
+                                        <p>Bid placed for <b>2.2799 NGN</b> 6 hours ago <br>by <a href="author.html">@johndoe</a></p>
                                     </div>
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar5.jpg" alt="">
-                                        <p>Put on sale for <b>0.55 ETH</b> 1 days ago <br>by <a href="author.html">@midinh</a></p>
+                                        <p>Put on sale for <b>0.55 NGN</b> 1 days ago <br>by <a href="author.html">@midinh</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -1172,15 +1203,15 @@ Buy, sell, and discover .</p>
                                 <div class="asset__actions">
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar10.jpg" alt="">
-                                        <p>Bid placed for <b>11.00 ETH</b> 4 hours ago <br>by <a href="author.html">@erikkk</a></p>
+                                        <p>Bid placed for <b>11.00 NGN</b> 4 hours ago <br>by <a href="author.html">@erikkk</a></p>
                                     </div>
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar4.jpg" alt="">
-                                        <p>Bid placed for <b>10.00 ETH</b> 5 hours ago <br>by <a href="author.html">@johndoe</a></p>
+                                        <p>Bid placed for <b>10.00 NGN</b> 5 hours ago <br>by <a href="author.html">@johndoe</a></p>
                                     </div>
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar6.jpg" alt="">
-                                        <p>Bid placed for <b>2.508 ETH</b> 5 hours ago <br>by <a href="author.html">@n1ckname</a></p>
+                                        <p>Bid placed for <b>2.508 NGN</b> 5 hours ago <br>by <a href="author.html">@n1ckname</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -1210,7 +1241,7 @@ Buy, sell, and discover .</p>
                             </div>
                             <div class="asset__price">
                                 <span>Minimum bid</span>
-                                <span>0.2 ETH</span>
+                                <span>0.2 NGN</span>
                             </div>
                         </div>
                         <!-- actions -->

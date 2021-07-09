@@ -55,7 +55,7 @@
                         <li class="header__nav-item pt-2">
                             <div class="custom-control custom-switch">
                                 <label for="toggleTheme" class="mr-5 text-light">night</label>
-                                <input type="checkbox" class="custom-control-input" id="toggleTheme" checked>
+                                <input type="checkbox" class="custom-control-input" id="toggleTheme">
                                 <label class="custom-control-label text-light" for="toggleTheme">day</label>
                             </div>
                         </li>
@@ -118,8 +118,8 @@
                 </button>
             </div>
         </header>
-        <main class="main" pgfs-layout="page" pgfs-layout-name="404" pgfs-route="/error">
-            <div class="container">
+        <main class="main" pgfs-layout="page" pgfs-layout-name="activity" pgfs-route="/activity">
+            <div class="container" pgfs-layout="page" pgfs-layout-name="Activity" pgfs-route="/activities">
                 <div class="row row--grid">
                     <!-- breadcrumb -->
                     <div class="col-12">
@@ -127,24 +127,241 @@
                             <li class="breadcrumb__item">
                                 <a href="index.html">Home</a>
                             </li>
-                            <li class="breadcrumb__item breadcrumb__item--active">Error 404</li>
+                            <li class="breadcrumb__item breadcrumb__item--active">Activity</li>
                         </ul>
                     </div>
                     <!-- end breadcrumb -->
-                    <!-- error -->
+                    <!-- title -->
                     <div class="col-12">
-                        <div class="page-404">
-                            <div class="page-404__wrap">
-                                <div class="page-404__content">
-                                    <h1 class="page-404__title">404</h1>
-                                    <p class="page-404__text">The page you are looking for not available!</p>
-                                    <a href="index.html" class="page-404__btn">go back</a>
+                        <div class="main__title main__title--page">
+                            <h1>Activity</h1>
+                        </div>
+                    </div>
+                    <!-- end title -->
+                </div>
+                <div class="row">
+                    <!-- sidebar -->
+                    <div class="col-12 col-xl-3 order-xl-2">
+                        <div class="filter-wrap">
+                            <button class="filter-wrap__btn" type="button" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">Open filter</button>
+                            <div class="collapse filter-wrap__content" id="collapseFilter">
+                                <!-- filter -->
+                                <div class="filter filter--sticky">
+                                    <h4 class="filter__title">Filters <button type="button">Clear all</button></h4>
+                                    <div class="filter__group">
+                                        <ul class="filter__checkboxes">
+                                            <li>
+                                                <input id="type5" type="checkbox" name="type5" checked="">
+                                                <label for="type5">Listings</label>
+                                            </li>
+                                            <li>
+                                                <input id="type6" type="checkbox" name="type6">
+                                                <label for="type6">Purchases</label>
+                                            </li>
+                                            <li>
+                                                <input id="type7" type="checkbox" name="type7" checked="">
+                                                <label for="type7">Sales</label>
+                                            </li>
+                                            <li>
+                                                <input id="type8" type="checkbox" name="type8" checked="">
+                                                <label for="type8">Transfers</label>
+                                            </li>
+                                            <li class="d-none">
+                                                <input id="type9" type="checkbox" name="type9">
+                                                <label for="type9">Bids</label>
+                                            </li>
+                                            <li>
+                                                <input id="type10" type="checkbox" name="type10">
+                                                <label for="type10">Likes</label>
+                                            </li>
+                                            <li>
+                                                <input id="type11" type="checkbox" name="type11">
+                                                <label for="type11">Followings</label>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
+                                <!-- end filter -->
                             </div>
                         </div>
                     </div>
-                    <!-- end error -->
-                </div>
+                    <!-- end sidebar -->
+                    <!-- content -->
+                    <div class="col-12 col-xl-9 order-xl-1">
+                        <div class="row row--grid">
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover1.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">Walking on Air</a></h3>
+                                        <p class="activity__text">listed by <a href="author.html">@Nickname</a> <br>for <b>0.049 NGN</b></p>
+                                        <span class="activity__time">4 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover2.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">To Infinity And Beyond</a></h3>
+                                        <p class="activity__text">9 editions listed by <a href="author.html">@neo</a> <br>for <b>0.085 NGN</b> each</p>
+                                        <span class="activity__time">21 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover3.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">Flowers in Concrete</a></h3>
+                                        <p class="activity__text">purchased by <a href="author.html">@johndoe</a> <b>0x23d2dc92b...82c6</b> for <b>0.011 NGN</b> from <a href="author.html">@min1max</a></p>
+                                        <span class="activity__time">21 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover4.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">Industrial Revolution</a></h3>
+                                        <p class="activity__text">transferred from <a href="author.html">@midinh</a> <br>to <a href="author.html">@johndoe</a></p>
+                                        <span class="activity__time">23 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover5.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">Tranquility</a></h3>
+                                        <p class="activity__text"><a href="author.html">@aaarthur</a> offered <b>0.002 WNGN</b></p>
+                                        <span class="activity__time">41 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover6.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">Tetradecapus</a></h3>
+                                        <p class="activity__text">liked by <a href="author.html">@johndoe</a></p>
+                                        <span class="activity__time">45 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover7.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">Elegance</a></h3>
+                                        <p class="activity__text">started following <a href="author.html">@johndoe</a></p>
+                                        <span class="activity__time">48 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover8.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">Walking on Air</a></h3>
+                                        <p class="activity__text">started following <a href="author.html">@johndoe</a></p>
+                                        <span class="activity__time">49 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- collapse -->
+                        <div class="row row--grid collapse" id="collapsemore">
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover1.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">Walking on Air</a></h3>
+                                        <p class="activity__text">listed by <a href="author.html">@Nickname</a> <br>for <b>0.049 NGN</b></p>
+                                        <span class="activity__time">4 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover2.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">To Infinity And Beyond</a></h3>
+                                        <p class="activity__text">9 editions listed by <a href="author.html">@neo</a> <br>for <b>0.085 NGN</b> each</p>
+                                        <span class="activity__time">21 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover3.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">Flowers in Concrete</a></h3>
+                                        <p class="activity__text">purchased by <a href="author.html">@johndoe</a> <b>0x23d2dc92b...82c6</b> for <b>0.011 NGN</b> from <a href="author.html">@min1max</a></p>
+                                        <span class="activity__time">21 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover4.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">Industrial Revolution</a></h3>
+                                        <p class="activity__text">transferred from <a href="author.html">@midinh</a> <br>to <a href="author.html">@johndoe</a></p>
+                                        <span class="activity__time">23 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover5.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">Tranquility</a></h3>
+                                        <p class="activity__text"><a href="author.html">@aaarthur</a> offered <b>0.002 WNGN</b></p>
+                                        <span class="activity__time">41 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover6.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">Tetradecapus</a></h3>
+                                        <p class="activity__text">liked by <a href="author.html">@johndoe</a></p>
+                                        <span class="activity__time">45 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover7.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">Elegance</a></h3>
+                                        <p class="activity__text">started following <a href="author.html">@johndoe</a></p>
+                                        <span class="activity__time">48 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="activity">
+                                    <a href="item.html" class="activity__cover"> <img src="img/cover/cover8.jpg" alt=""> </a>
+                                    <div class="activity__content">
+                                        <h3 class="activity__title"><a href="item.html">Walking on Air</a></h3>
+                                        <p class="activity__text">started following <a href="author.html">@johndoe</a></p>
+                                        <span class="activity__time">49 minutes ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row--grid">
+                            <div class="col-12">
+                                <button class="main__load" type="button" data-toggle="collapse" data-target="#collapsemore" aria-expanded="false" aria-controls="collapsemore">Load more</button>
+                            </div>
+                        </div>
+                        <!-- end collapse -->
+                    </div>
+                    <!-- end content -->
+                </div>                 
             </div>
         </main>
         <!-- end header -->
@@ -327,23 +544,23 @@
                                 <div class="asset__actions asset__actions--scroll" id="asset__actions--scroll">
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar10.jpg" alt="">
-                                        <p>Bid placed for <b>11.00 ETH</b> 4 hours ago <br>by <a href="author.html">@erikkk</a></p>
+                                        <p>Bid placed for <b>11.00 NGN</b> 4 hours ago <br>by <a href="author.html">@erikkk</a></p>
                                     </div>
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar4.jpg" alt="">
-                                        <p>Bid placed for <b>10.00 ETH</b> 5 hours ago <br>by <a href="author.html">@johndoe</a></p>
+                                        <p>Bid placed for <b>10.00 NGN</b> 5 hours ago <br>by <a href="author.html">@johndoe</a></p>
                                     </div>
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar6.jpg" alt="">
-                                        <p>Bid placed for <b>2.508 ETH</b> 5 hours ago <br>by <a href="author.html">@n1ckname</a></p>
+                                        <p>Bid placed for <b>2.508 NGN</b> 5 hours ago <br>by <a href="author.html">@n1ckname</a></p>
                                     </div>
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar4.jpg" alt="">
-                                        <p>Bid placed for <b>2.2799 ETH</b> 6 hours ago <br>by <a href="author.html">@johndoe</a></p>
+                                        <p>Bid placed for <b>2.2799 NGN</b> 6 hours ago <br>by <a href="author.html">@johndoe</a></p>
                                     </div>
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar5.jpg" alt="">
-                                        <p>Put on sale for <b>0.55 ETH</b> 1 days ago <br>by <a href="author.html">@midinh</a></p>
+                                        <p>Put on sale for <b>0.55 NGN</b> 1 days ago <br>by <a href="author.html">@midinh</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -351,15 +568,15 @@
                                 <div class="asset__actions">
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar10.jpg" alt="">
-                                        <p>Bid placed for <b>11.00 ETH</b> 4 hours ago <br>by <a href="author.html">@erikkk</a></p>
+                                        <p>Bid placed for <b>11.00 NGN</b> 4 hours ago <br>by <a href="author.html">@erikkk</a></p>
                                     </div>
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar4.jpg" alt="">
-                                        <p>Bid placed for <b>10.00 ETH</b> 5 hours ago <br>by <a href="author.html">@johndoe</a></p>
+                                        <p>Bid placed for <b>10.00 NGN</b> 5 hours ago <br>by <a href="author.html">@johndoe</a></p>
                                     </div>
                                     <div class="asset__action asset__action--verified">
                                         <img src="img/avatars/avatar6.jpg" alt="">
-                                        <p>Bid placed for <b>2.508 ETH</b> 5 hours ago <br>by <a href="author.html">@n1ckname</a></p>
+                                        <p>Bid placed for <b>2.508 NGN</b> 5 hours ago <br>by <a href="author.html">@n1ckname</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -389,7 +606,7 @@
                             </div>
                             <div class="asset__price">
                                 <span>Minimum bid</span>
-                                <span>0.2 ETH</span>
+                                <span>0.2 NGN</span>
                             </div>
                         </div>
                         <!-- actions -->
