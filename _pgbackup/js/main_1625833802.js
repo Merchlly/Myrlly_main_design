@@ -400,19 +400,19 @@ $(document).ready(function () {
 		}
 	});
 
-	// function themeState() {
-	// 	let state = localStorage.getItem("themeState");
+	function themeState() {
+		let state = localStorage.getItem("themeState");
 
-	// 	if (state) {
-	// 		$("body.lightTheme").toggleClass("lightTheme");
+		if (state) {
+			$("body.lightTheme").toggleClass("lightTheme");
 
-	// 		$("#toggleTheme")[0].checked = true
-	// 	} else {
-	// 		$("body")[0].classList.add("lightTheme");
+			$("#toggleTheme")[0].checked = true
+		} else {
+			$("body")[0].classList.add("lightTheme");
 
-	// 		$("#toggleTheme")[0].checked = false
-	// 	}
-	// }
+			$("#toggleTheme")[0].checked = false
+		}
+	}
 
-	// themeState();
+	themeState();
 });

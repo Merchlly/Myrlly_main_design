@@ -388,9 +388,9 @@ $(document).ready(function () {
 
 	// toggle theme
 	$("#toggleTheme").on("click", () => {
+		let state = localStorage.getItem("themeState");
 
-
-		if ($("#toggleTheme")[0].checked) {
+		if (state) {
 			$("body")[0].classList.add("lightTheme");
 			localStorage.setItem("themeState", false)
 
@@ -398,21 +398,6 @@ $(document).ready(function () {
 			$("body.lightTheme").toggleClass("lightTheme");
 			localStorage.setItem("themeState", true)
 		}
-	});
+	})
 
-	// function themeState() {
-	// 	let state = localStorage.getItem("themeState");
-
-	// 	if (state) {
-	// 		$("body.lightTheme").toggleClass("lightTheme");
-
-	// 		$("#toggleTheme")[0].checked = true
-	// 	} else {
-	// 		$("body")[0].classList.add("lightTheme");
-
-	// 		$("#toggleTheme")[0].checked = false
-	// 	}
-	// }
-
-	// themeState();
 });
